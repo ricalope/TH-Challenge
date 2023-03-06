@@ -1,11 +1,46 @@
-# App Academy Mock Takehome Challenges
+# Mock TakeHome Challenge Solution Startup Instructions
 
-Welcome to a/A's take home challenge, this should be a fun project to put to practice what you've just learned from recap academy.
-There are instructions for each part (front and backend) in their respective folders.
-You are free to use any backend and frontend framework you like for this takehome.
-The requirements listed in each section are by no means a ceiling, please feel free to expand upon anything in the takehome if you have time to do so.
+1. Clone this Repository.
 
-## Submission
-In order to submit your project from this mock takehome you will need to create a new git repo for your project. You will need to write out a readme with clear instructions on how to start your solution locally. After you've finished, fillout the form, in the last section of said form there will be a place to put the link to your solution repo.
+2. Install dependencies using:
+```bash
+pipenv install -r requirements.txt
+```
 
-<a href="https://docs.google.com/forms/d/e/1FAIpQLSfqjYoame7tAiIOmQdC8nkDASqg9tDhEoe-n_DdQxSuw-3QgQ/viewform?usp=sf_link">Submit</a>
+3. Create a .env file at the root of the file and create a SECRET_KEY variable with a secret key of your choosing.
+
+4. This repo utilizes sqlite3 so make sure to set the path to sqlite3 in the .env as well.
+
+5. After you have set the sqlite path in the .env file, cd into the backend folder and run:
+
+```bash
+pipenv shell
+```
+
+```bash
+flask db upgrade
+```
+
+```bash
+flask seed all
+```
+
+6. To start up the backend server (while still in the pipenv shell) run:
+
+```bash
+flask run
+```
+
+7. Next you will need to cd into the frontend folder and run:
+
+```bash
+npm install
+```
+
+8. To start up React run:
+
+```bash
+npm start
+```
+
+### And thats it! After you've run both the backend and frontend servers it should automagically open a browser window and you are all set!
