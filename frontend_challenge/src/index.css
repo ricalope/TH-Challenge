@@ -1,0 +1,284 @@
+* {
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+h3,
+h2 {
+    font-weight: lighter;
+    margin: 0;
+    padding: 10px;
+}
+
+#post-coff {
+    font-weight: bold;
+}
+
+.main-container {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    padding-left: 275px;
+}
+
+.posts-container {
+    width: 700px;
+    /* border: 1px solid red; */
+}
+
+.posts-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+    /* border: 1px solid red; */
+    border-top-left-radius: 10px;
+    border-left: 4px solid rgb(171, 105, 49);
+    border-bottom: 2px solid rgb(236, 212, 186);
+    height: 50px;
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.new-post {
+    height: fit-content;
+    border-radius: 4px 8px;
+    cursor: pointer;
+    margin-top: 8px;
+    border-top: 2px solid rgb(171, 105, 49);
+    border-right:  2px solid rgb(171, 105, 49);
+    border-left: 2px solid rgb(236, 212, 186);
+    border-bottom: 2px solid rgb(236, 212, 186);
+}
+
+.new-post:hover {
+    border-top: 2px solid rgb(236, 212, 186);
+    border-right: 2px solid rgb(236, 212, 186);
+    border-left: 2px solid rgb(171, 105, 49);
+    border-bottom: 2px solid rgb(171, 105, 49);
+}
+
+.post-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-bottom: 2px dashed rgb(236, 212, 186);
+}
+
+.p-body {
+    word-wrap: break-word;
+}
+
+.coffees-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 235px;
+}
+
+.coffees-header {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.new-coffee {
+    height: fit-content;
+    border-radius: 4px 8px;
+    cursor: pointer;
+    margin-top: 6px;
+    border-top: 2px solid rgb(171, 105, 49);
+    border-right:  2px solid rgb(171, 105, 49);
+    border-left: 2px solid rgb(236, 212, 186);
+    border-bottom: 2px solid rgb(236, 212, 186);
+}
+
+.new-coffee:hover {
+    border-top: 2px solid rgb(236, 212, 186);
+    border-right: 2px solid rgb(236, 212, 186);
+    border-left: 2px solid rgb(171, 105, 49);
+    border-bottom: 2px solid rgb(171, 105, 49);
+}
+
+.coffees-content {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.coffee-card {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    border-top-left-radius: 10px;
+    border-left: 4px solid rgb(171, 105, 49);
+    border-bottom: 2px solid rgb(236, 212, 186);
+    padding: 0 8px;
+    height: 40px;
+}
+
+.coffee-card:hover {
+    box-shadow: 0 0 10px rgb(171, 105, 49);
+}
+
+.coffee-icon {
+    padding-bottom: 3px;
+}
+
+#coff {
+    font-weight: lighter;
+}
+
+.create-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    height: 100%;
+}
+
+.create-title {
+    width: 100%;
+}
+
+.title {
+    width: 100%;
+    height: 30px;
+    border: none;
+    border-top-left-radius: 10px;
+    border-left: 4px solid rgb(171, 105, 49);
+    border-bottom: 2px solid rgb(236, 212, 186);
+    padding-left: 10px;
+}
+
+.middle-input {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.create-coffee {
+    display: flex;
+    gap: 10px;
+}
+
+.rating {
+    width: 100px;
+    height: 30px;
+    border: none;
+    border-top-left-radius: 10px;
+    border-left: 4px solid rgb(171, 105, 49);
+    border-bottom: 2px solid rgb(236, 212, 186);
+}
+
+.cc-select {
+    height: 30px;
+    align-self: center;
+    border: none;
+    border-top-left-radius: 10px;
+    border-left: 2px solid rgb(171, 105, 49);
+    border-bottom: 2px solid rgb(236, 212, 186);
+}
+
+.textarea {
+    height: 130px;
+    width: 276px;
+    padding: 5px;
+}
+
+.cc-btn {
+    width: 276px;
+    border-radius: 4px 8px;
+    cursor: pointer;
+    margin-top: 6px;
+    border-top: 2px solid rgb(171, 105, 49);
+    border-right:  2px solid rgb(171, 105, 49);
+    border-left: 2px solid rgb(236, 212, 186);
+    border-bottom: 2px solid rgb(236, 212, 186);
+}
+
+.cc-btn:hover {
+    border-top: 2px solid rgb(236, 212, 186);
+    border-right: 2px solid rgb(236, 212, 186);
+    border-left: 2px solid rgb(171, 105, 49);
+    border-bottom: 2px solid rgb(171, 105, 49);
+}
+
+.add-coffee-wrapper {
+    position: absolute;
+    top: 72px;
+    background-color: white;
+    box-shadow: 0 0 2px #262626;
+    padding: 5px;
+    padding-bottom: 15px;
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    border-left: 2px solid rgb(171, 105, 49);
+    border-bottom: 2px solid rgb(171, 105, 49);
+    border-top: 2px solid rgb(236, 212, 186);
+    border-right: 2px solid rgb(236, 212, 186);
+}
+
+.add-coffee-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.name-input,
+.year-input,
+.caff-input {
+    display: flex;
+    align-items: center;
+    padding: 0 15px;
+}
+
+.name-input {
+    gap: 20px;
+}
+
+.year-input {
+    gap: 30px;
+}
+
+.caff-input {
+    gap: 5px;
+}
+
+.input {
+    height: 30px;
+    width: 80px;
+}
+
+#label {
+    margin: 0;
+}
+
+.new-btn {
+    padding-top: 10px;
+}
+
+.coffee-delete {
+    padding-left: 35px;
+}
+
+.posts-content {
+    padding-top: 20px;
+}
+
+.coffee-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.post-delete {
+    width: 10px;
+    padding-left: 30px;
+}

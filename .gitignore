@@ -4,3 +4,5 @@
 /.pytest_cache
 /.venv
 /.vscode
+.env
+dev.db
